@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Lightning Layout Example">
+        <div class="slds-m-left_large">
+            <p>Name : {name}</p>
+            <p>Salary : {salary}</p>
+        </div>
+        <hr/>
+        <lightning-layout class="slds-m-left_large">
+            <lightning-layout-item><b>Name</b></lightning-layout-item>
+            <lightning-layout-item class="slds-m-left_large"><b>Contact</b></lightning-layout-item>
+            <lightning-layout-item class="slds-m-left_large"><b>Salary</b></lightning-layout-item>
+            <lightning-layout-item class="slds-m-left_large"><b>City</b></lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout class="slds-m-left_large">
+            <lightning-layout-item>{data.name}</lightning-layout-item>
+            <lightning-layout-item class="slds-m-left_large">{data.contact}</lightning-layout-item>
+            <lightning-layout-item class="slds-m-left_large">{data.salary}</lightning-layout-item>
+            <lightning-layout-item class="slds-m-left_large">{data.city}</lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
