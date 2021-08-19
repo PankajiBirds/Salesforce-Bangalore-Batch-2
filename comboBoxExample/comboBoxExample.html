@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="ComboBox Example">
+        <div class="slds-m-left_medium">
+            <lightning-combobox options={citiesOption}
+                label="Select City"
+                value={selectedCity}
+                onchange={handleCityChange}
+            >
+            </lightning-combobox>
+            <p><b>Selected City : </b> {selectedCity} </p>
+            <hr/>
+            <lightning-combobox options={stateOptions}
+                label="Select State"
+                onchange={handleStateChange}
+            >
+            </lightning-combobox>
+            <template if:true={selectedState}>
+                <p><b>Selected State : </b> {selectedState} </p>
+            </template>            
+        </div>
+    </lightning-card>
+</template>

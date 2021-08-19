@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="If and For Example">
+        <div class="slds-m-left_medium">
+            <h2>User Detail</h2>
+            <template if:true={isDisplay}>
+                <p>Name : {userDetail.name}</p>
+                <p>Salary : {userDetail.salary}</p>
+            </template>
+            <template if:false={isDisplay}>
+                <p>No record found</p>
+            </template>
+            <hr/>
+            <ul>
+                <template for:each={dataArray} for:item="data" for:index="index">
+                    <li key={data}>{index} &nbsp;&nbsp; {data}</li>
+                </template>
+            </ul>
+        </div>        
+    </lightning-card>
+</template>
