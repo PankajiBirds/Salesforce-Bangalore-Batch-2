@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Checkbox Group Example">
+        <div class="slds-m-left_large">
+            <lightning-checkbox-group options={hobbies}
+                value={selectedHobbiArray}
+                onchange={handleHobbiChange}
+            >
+            </lightning-checkbox-group>            
+            <p><b>Selected Hobbies : </b> {displaySelectedHobbies} </p>            
+            <br/>
+            <lightning-button label="Get Hobbi" onclick={handleGetHobbi} variant="brand">                
+            </lightning-button>
+
+        </div>
+    </lightning-card>
+</template>

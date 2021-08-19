@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Radio Button Example">
+        <div class="slds-m-left_large">
+            <lightning-radio-group options={statusOptions} 
+            value={selectedStatus}
+            onchange={handleStatus}
+            >
+            </lightning-radio-group>
+            <p><b>Selecte Status : </b> {displayStatus} </p>
+        </div>
+    </lightning-card>
+</template>
