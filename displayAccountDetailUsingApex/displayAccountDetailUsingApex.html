@@ -1,0 +1,48 @@
+<template>
+    <lightning-card title="Account Detail">
+        <div class="slds-m-left_large">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2">
+                    <span>Name</span>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span>Phone</span>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{account.Name}</span>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{account.Phone}</span>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2">
+                    <span>Email</span>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span>Rating</span>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{account.Email__c}</span>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{account.Rating}</span>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2">
+                    <span>Account Number</span>
+                </div>                
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{account.AccountNumber}</span>
+                </div>               
+            </div>
+        </div>
+    </lightning-card>
+</template>

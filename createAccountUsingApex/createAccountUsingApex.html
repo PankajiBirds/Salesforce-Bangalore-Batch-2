@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Create Account">
+        <div class="slds-m-left_large slds-m-right_large">
+            <lightning-input type="text" label="Account Name" required class="forInput"></lightning-input>
+            <lightning-input type="number" label="Phone" required class="forInput"></lightning-input>
+            <lightning-input type="email" label="Email" class="forInput"></lightning-input>
+            <br/>
+            <lightning-button variant="brand" label="Save" onclick={handleSaveAccount}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
