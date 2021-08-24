@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Parent to Child Example" icon-name="custom:custom1">
+        <div class="slds-m-around_large">
+            <c-parent-to-child-example-child></c-parent-to-child-example-child>
+            <hr/>
+            <c-parent-to-child-example-child employee-id="101" employee-name={name} salary={salary}></c-parent-to-child-example-child>
+            <hr/>
+            <lightning-input label="Employee Id" class="forInput"></lightning-input>
+            <lightning-input label="Employee Name" class="forInput"></lightning-input>
+            <lightning-input label="Employee Salary" class="forInput"></lightning-input>
+            <br/>
+            <lightning-button label="Send" variant="brand" onclick={handleSend}></lightning-button>
+            <hr/>
+            <c-parent-to-child-example-child class="child"></c-parent-to-child-example-child>
+        </div>
+    </lightning-card>
+</template>
