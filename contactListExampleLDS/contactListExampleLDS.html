@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Contact List Example" icon-name="custom:custom4">
+        <div class="slds-m-around_large">
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Account Name</th>
+                    </tr>
+                </thead>
+                <tbody>                                    
+                    <template for:each={allContactList} for:item="contact">
+                        <tr key={contact}>
+                            <td>{contact.fields.FirstName.value}</td>
+                            <td>{contact.fields.LastName.value}</td>
+                            <td>{contact.fields.Phone.value}</td>
+                            <td>{contact.fields.Email.value}</td>
+                            <td>{contact.fields.Account.displayValue}</td>
+                        </tr>    
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+</template>
