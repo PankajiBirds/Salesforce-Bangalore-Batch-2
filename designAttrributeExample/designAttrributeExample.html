@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title={title} icon-name="custom:custom3">
+        <template if:true={isDisplay}>
+            <div class="slds-m-around_large">
+                <ul>
+                    <li><b>Employee Id : </b> {employee.id}</li>
+                    <li><b>Employee Name : </b> {employee.name}</li>
+                    <li><b>Employee Salary : </b> {employee.salary}</li>
+                </ul>
+            </div>
+        </template>
+        <p><b> Select Rating : </b>{rating}</p>
+    </lightning-card>
+</template>

@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Child to Parent Example" icon-name="custom:custom2">
+        <div class="slds-m-around_large">
+            <c-child-component onsimpleevent={handleSimpleEvent}></c-child-component>
+            <hr/>
+            <ul>
+                <li><b>Employee Id : </b> {id} </li>
+                <li><b>Employee Name : </b> {employeeName} </li>
+                <li><b>Employee Salary : </b> {salary} </li>
+            </ul>
+        </div>
+    </lightning-card>
+</template>
