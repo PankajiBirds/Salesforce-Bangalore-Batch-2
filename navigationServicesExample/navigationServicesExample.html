@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Navigation Services" icon-name="custom:custom12">
+        <div class="slds-m-left_large">
+            <lightning-layout>
+                <lightning-layout-item>
+                    <lightning-button label="Home Page" onclick={handleHomePageClick}></lightning-button>
+                    <lightning-button class="slds-m-left_large" label="Chatter Page" onclick={handleChatterPageClick}>                                                
+                    </lightning-button>
+                    <lightning-button class="slds-m-left_large" label="Google" onclick={handleGoogleClick}>
+                    </lightning-button>
+                    <lightning-button class="slds-m-left_large" label="Components" onclick={handleOpenComponentClick}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout class="slds-m-top_large">
+                <lightning-layout-item>
+                    <lightning-button label="Contact List" onclick={handleContactList}></lightning-button>
+                    <lightning-button class="slds-m-left_large" label="New Contact" onclick={handleNewContact}></lightning-button>
+                    <lightning-button class="slds-m-left_large" label="Edit Contact" onclick={handleEditContact}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout class="slds-m-top_large">
+                <lightning-layout-item>
+                    <lightning-button label="View Contact" onclick={handleViewContact}></lightning-button>
+                    <lightning-button class="slds-m-left_large" label="New Contact with Default" onclick={handleContactWithDefault}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+</template>
