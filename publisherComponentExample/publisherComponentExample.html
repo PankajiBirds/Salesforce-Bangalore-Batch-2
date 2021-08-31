@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Publisher Component" icon-name="custom:custom13">
+        <div class="slds-m-around_large">
+            <lightning-button label="Send Message" onclick={handleSendMessage}></lightning-button>
+            <lightning-button class="slds-m-left_large" label="Send User Detail" onclick={handleSendUserDetail}></lightning-button>
+            <br/>
+            <h2>User Detail </h2>
+            <ul>
+                <li><b>User Id : </b> {userDetail.id}</li>
+                <li><b>Name : </b> {userDetail.name}</li>
+                <li><b>Salary : </b> {userDetail.salary}</li>
+                <li><b>City : </b> {userDetail.city}</li>
+            </ul>
+        </div>
+    </lightning-card>
+</template>
