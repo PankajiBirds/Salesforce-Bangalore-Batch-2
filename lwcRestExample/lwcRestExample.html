@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="LWC Rest Example" icon-name="custom:custom18">
+        <div class="slds-m-around_large">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>User Id</th>
+                        <th>Title</th>
+                        <th>Body</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={responseData} for:item="post">
+                        <tr key={post}>
+                            <td>{post.id}</td>
+                            <td>{post.user_id}</td>
+                            <td>{post.title}</td>
+                            <td>{post.body}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+</template>
